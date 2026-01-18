@@ -64,22 +64,31 @@ body{
 }
 
 /* IMAGE ITSELF */
-.hero-img{
-  width:100%;
-  height:auto;
-  max-height:340px;        /* prevents vertical overflow */
-  object-fit:contain;     /* prevents cropping */
-  border-radius:8px
-}
 
-/* IMAGE CONTAINER — FIXED */
 .hero-visual{
   display:flex;
   align-items:center;
   justify-content:center;
-  max-width:520px;        /* hard limit so it never gets huge */
-  margin-left:auto        /* keeps it pushed to the right */
+  max-width:520px;
+  margin-left:auto;
 }
+
+.hero-img{
+  width:100%;
+  height:auto;
+  max-height:340px;
+  object-fit:contain;
+  border-radius:8px;
+}
+
+@media(max-width:768px){
+  .hero-visual{
+    display:none;
+  }
+}
+
+
+
 
 /* ===== BUTTONS ===== */
 
