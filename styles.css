@@ -28,7 +28,9 @@ body{font-family:Inter,sans-serif;margin:0;background:#f7f3ea}
   align-items: center;
 }
 
-
+.hero-visual {
+  min-height: 320px;
+}
 
 
 .hero-visual{display:none}
