@@ -24,8 +24,8 @@ body{
   justify-content:space-between
 }
 
-.hero-actions {
-  margin-top: 1.5rem; /* moves buttons down slightly */
+.hero-actions{
+  margin-top:1.5rem
 }
 
 .logo-img{
@@ -48,47 +48,43 @@ body{
   border:none
 }
 
-/* ===== HERO LAYOUT ===== */
+/* ===== HERO SECTION FIX ===== */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+}
 
 .hero-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:48px
+  grid-template-columns:1fr 520px;
+  gap:48px;
+  align-items:center;
 }
 
-.hero h1 {
+.hero h1{
   font-family:'Playfair Display', serif;
-  font-size:clamp(32px, 4vw, 48px);
+  font-size:clamp(32px,4vw,48px);
   line-height:1.2;
   margin-bottom:16px
 }
 
-/* IMAGE ITSELF */
-
 .hero-visual{
+  width:100%;
+  max-width:520px;
   display:flex;
   align-items:center;
   justify-content:center;
-  max-width:520px;
-  margin-left:auto;
 }
 
 .hero-img{
   width:100%;
   height:auto;
-  max-height:340px;
+  max-height:280px;
   object-fit:contain;
+  display:block;
   border-radius:8px;
 }
-
-/*@media(max-width:768px){
-  .hero-visual{
-    display:none;
-  }
-}*/
-
-
-
 
 /* ===== BUTTONS ===== */
 
@@ -223,10 +219,9 @@ body{
     grid-template-columns:1fr
   }
 
-  /* hide hero image cleanly on mobile */
- /* .hero-visual{
+  .hero-visual{
     display:none
-  }*/
+  }
 
   .project-grid{
     grid-template-columns:1fr
