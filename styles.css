@@ -81,11 +81,11 @@ body{
   border-radius:8px;
 }
 
-@media(max-width:768px){
+/*@media(max-width:768px){
   .hero-visual{
     display:none;
   }
-}
+}*/
 
 
 
@@ -224,9 +224,9 @@ body{
   }
 
   /* hide hero image cleanly on mobile */
-  .hero-visual{
+ /* .hero-visual{
     display:none
-  }
+  }*/
 
   .project-grid{
     grid-template-columns:1fr
