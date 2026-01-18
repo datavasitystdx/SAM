@@ -24,8 +24,8 @@ body{font-family:Inter,sans-serif;margin:0;background:#f7f3ea}
 
 .hero-visual {
   width: 100%;
-  display: flex;
-  align-items: center;
+  max-width: 520px;     /* controls how wide it can be */
+  margin-left: auto;   /* keeps it aligned right */
 }
 
 .hero-visual {
